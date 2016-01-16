@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/C:/Users/Administrator/StudioProjects/warmalarm/app/src/main/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="seperation_line">#c2c2c2</color>
+    <color name="tabview_text_color">#5dadee</color>
+    <color name="theme_statusbar_background_color">#fff9f9f9</color>
+    <color name="vpi__background_holo_dark">#ff000000</color>
+    <color name="vpi__background_holo_light">#fff3f3f3</color>
+    <color name="vpi__bright_foreground_disabled_holo_dark">#ff4c4c4c</color>
+    <color name="vpi__bright_foreground_disabled_holo_light">#ffb2b2b2</color>
+    <color name="vpi__bright_foreground_holo_dark">@color/vpi__background_holo_light</color>
+    <color name="vpi__bright_foreground_holo_light">@color/vpi__background_holo_dark</color>
+    <color name="vpi__bright_foreground_inverse_holo_dark">@color/vpi__bright_foreground_holo_light</color>
+    <color name="vpi__bright_foreground_inverse_holo_light">@color/vpi__bright_foreground_holo_dark</color>
+    <color name="white">#FFFFFF</color>
+    <declare-styleable name="TabPageIndicator"><attr format="reference" name="vpiTabPageIndicatorStyle"/></declare-styleable>
+    <!-- From: file:/C:/Users/Administrator/StudioProjects/warmalarm/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="app_name">warmalarm</string>
+    <string name="confim">完  成</string>
+    <string name="datetime">日期-时间:</string>
+    <string name="datetime_picker_cancel">取消</string>
+    <string name="datetime_picker_confirm">确认</string>
+    <string name="datetime_picker_title">设置闹钟</string>
+    <string name="fname">ta是：</string>
+    <string name="tips">通讯录中的谁？</string>
+    <string name="tobaidu">百度</string>
+    <string name="warmalarm_tabs_alarm">闹钟</string>
+    <string name="warmalarm_tabs_colorstring">点滴</string>
+    <string name="warmalarm_tabs_setting">设置</string>
+    <string name="warmalarm_tabs_wenxin">温馨</string>
+    <!-- From: file:/C:/Users/Administrator/StudioProjects/warmalarm/app/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <style name="CustomTabPageIndicator">
+        <item name="android:textAppearance">@style/CustomTabPageIndicator.Text</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:dividerPadding">10dp</item>
+        <item name="android:showDividers">middle</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColor">@color/vpi_theme_color</item>
+        <item name="android:background">@drawable/indicator_bar_layerlist</item>
+    </style>
+    <style name="CustomTabPageIndicator.Text" parent="android:TextAppearance.Medium">
+        <item name="android:typeface">monospace</item>
+    </style>
+    <style name="StyledIndicator" parent="android:Theme.Holo.Light">
+        <item name="vpiTabPageIndicatorStyle">@style/CustomTabPageIndicator</item>
+    </style>
+    <style name="Widget">
+    </style>
+</resources>

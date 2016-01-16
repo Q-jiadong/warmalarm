@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="200dp"
+    android:background="@drawable/alarm_bg">
+    
+    <ImageView
+        android:id="@+id/heart_title"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/heart"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@null"/>
+    
+    <View
+        android:id="@+id/seperation_line"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="50dp"
+        android:background="@color/seperation_line"
+        android:layout_height="1dp"
+        android:layout_below="@+id/heart_title"/>
+    
+    <ImageView
+        android:id="@+id/alarm_pic"
+        android:src="@drawable/clockmark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/seperation_line"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:contentDescription="@null"/>
+    
+    <TextView
+        android:id="@+id/alarm_time_text"
+        android:textSize="25sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/alarm_pic"
+        android:layout_below="@+id/seperation_line"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"/>
+    
+    <ImageView
+        android:id="@+id/alarm_marks_pic"
+        android:src="@drawable/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:contentDescription="@null"
+        android:layout_below="@+id/alarm_pic"/>
+    
+    <TextView
+        android:id="@+id/alarm_marks_text"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/alarm_marks_pic"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/alarm_pic"/>
+
+</RelativeLayout>
+<!-- From: file:/C:/Users/Administrator/StudioProjects/warmalarm/app/src/main/res/layout/alarm_item_layout.xml -->

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="D:\adt-bundle-windows-x86_64-20140321\sdk\extras\android\m2repository\com\android\support\support-v4\19.1.0\support-v4-19.1.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
+        <dex dex="C:\Users\Administrator\StudioProjects\warmalarm\app\build\intermediates\pre-dexed\debug\support-v4-19.1.0-269b660d78e582ad08c396ce1a171205a775b0a0.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\StudioProjects\warmalarm\app\libs\pinyin4j-2.5.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="ae353005f973da1cd8545b54354504c2503f6865">
+        <dex dex="C:\Users\Administrator\StudioProjects\warmalarm\app\build\intermediates\pre-dexed\debug\pinyin4j-2.5.0-19fa9b67f7a0e2b42c9aaca46c713447b4cb2dec.jar" />
+    </item>
+
+</items>

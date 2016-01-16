@@ -1,0 +1,17 @@
+<resources>
+
+    <string name="app_name">warmalarm</string>
+    <string name="warmalarm_tabs_alarm">闹钟</string>
+    <string name="warmalarm_tabs_wenxin">温馨</string>
+    <string name="warmalarm_tabs_colorstring">点滴</string>
+    <string name="warmalarm_tabs_setting">设置</string>
+    <string name="fname">ta是：</string>
+    <string name="tips">通讯录中的谁？</string>
+    <string name="datetime">日期-时间:</string>
+    <string name="confim">完  成</string>
+    <string name="datetime_picker_title">设置闹钟</string>
+    <string name="datetime_picker_confirm">确认</string>
+    <string name="datetime_picker_cancel">取消</string>
+    <string name="tobaidu">百度</string>
+
+</resources>

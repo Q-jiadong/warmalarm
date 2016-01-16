@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:state_selected="true" android:drawable="@drawable/drops_color"/>
+    <item android:drawable="@drawable/drops"/>
+</selector>
+<!-- From: file:/C:/Users/Administrator/StudioProjects/warmalarm/app/src/main/res/drawable/color_tab_selector.xml -->
