@@ -3,6 +3,7 @@ package com.app.warmalarm.alarmfragment;
 import com.app.warmalarm.R;
 import com.app.warmalarm.R.id;
 import com.app.warmalarm.R.layout;
+import com.umeng.analytics.MobclickAgent;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -140,5 +141,17 @@ public class LocktoCall extends Activity implements OnTouchListener
 		 * 
 		 */
 		return false;
+	}
+
+	@Override
+	public void onResume() {
+		super.onResume();
+		MobclickAgent.onResume(this);
+	}
+
+	@Override
+	public void onPause() {
+		super.onPause();
+		MobclickAgent.onPause(this);
 	}
 }

@@ -2,6 +2,13 @@
 <items version="2" >
 
     <item
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.umeng.analytics\analytics\5.6.4\76fed6d2233b958f0c1d589aa366785e0ab5c8f1\analytics-5.6.4.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="76fed6d2233b958f0c1d589aa366785e0ab5c8f1">
+        <dex dex="C:\Users\Administrator\StudioProjects\warmalarm\app\build\intermediates\pre-dexed\debug\analytics-5.6.4-4e55381533289906ff55029a8aa8793ca47830d2.jar" />
+    </item>
+    <item
         jar="D:\adt-bundle-windows-x86_64-20140321\sdk\extras\android\m2repository\com\android\support\support-v4\19.1.0\support-v4-19.1.0.jar"
         jumboMode="false"
         revision="19.1.0"

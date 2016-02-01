@@ -4,6 +4,7 @@ import com.app.warmalarm.alarmfragment.AlarmFragment;
 import com.app.warmalarm.colorfragment.ColorsFragment;
 import com.app.warmalarm.settingfragment.SettingFragment;
 import com.app.warmalarm.wenxinfragment.WenxinFragment;
+import com.umeng.analytics.MobclickAgent;
 
 import android.app.ActionBar;
 import android.os.Bundle;
@@ -47,6 +48,7 @@ public class WarmAlarmActivity extends FragmentActivity {
         setContentView(R.layout.viewpager_indicator_layout);
         initActionBar();
         initViewPager();
+        MobclickAgent.openActivityDurationTrack(false);
     }
     
     private void initViewPager() {
@@ -85,7 +87,8 @@ public class WarmAlarmActivity extends FragmentActivity {
             Toast.makeText(getApplicationContext(), "再次点击退出应用程序！", Toast.LENGTH_SHORT).show();
             mHandler.sendEmptyMessageDelayed(0, 2000);
         } else {
-            finish();
+            System.exit(0);
+            MobclickAgent.onKillProcess(this);
         }
         
         return true;

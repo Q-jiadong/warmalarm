@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 import com.app.warmalarm.R;
+import com.umeng.analytics.MobclickAgent;
+
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -39,6 +41,13 @@ public class AlarmFragment extends Fragment {
     public void onResume() {
         super.onResume();
         showAlarmList();
+        MobclickAgent.onPageStart("AlarmFragment");;
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        MobclickAgent.onPageEnd("AlarmFragment");
     }
     
     //create the alarm fragment

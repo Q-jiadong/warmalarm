@@ -13,6 +13,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.app.warmalarm.R;
+import com.umeng.analytics.MobclickAgent;
 
 import java.io.BufferedInputStream;
 import java.io.IOException;
@@ -96,5 +97,17 @@ public class WenxinFragment extends Fragment {
                 WenxinFragment.this.mHandler.sendMessage(msg);
             }
         }.start();
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        MobclickAgent.onPageStart("WenxinFragment");
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        MobclickAgent.onPageEnd("WenxinFragment");
     }
 }

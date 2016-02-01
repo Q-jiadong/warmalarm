@@ -9,6 +9,7 @@ import java.util.HashMap;
 import java.util.Locale;
 
 import com.app.warmalarm.R;
+import com.umeng.analytics.MobclickAgent;
 
 import android.app.ActionBar;
 import android.app.Activity;
@@ -437,5 +438,17 @@ public class AddAlarmActivity extends Activity{
     
     private void insertData(SQLiteDatabase db, String time, String name) {
         db.execSQL("insert into alarm_info values(null, ?, ?)", new String[]{time, name});
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        MobclickAgent.onResume(this);
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        MobclickAgent.onPause(this);
     }
 }

@@ -17,6 +17,12 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <!--Add for Umeng SDK being used to collect statistics-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
         
     <application
         android:allowBackup="true"
@@ -42,6 +48,9 @@
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
         </activity>
         <receiver android:name="com.app.warmalarm.alarmfragment.AlarmReceiver" android:process=":remote" />
+
+        <meta-data android:value="56a9ddebe0f55a0b1600103a" android:name="UMENG_APPKEY"/>
+        <meta-data android:value="wandoujia" android:name="UMENG_CHANNEL"/>
     </application>
 
 </manifest>

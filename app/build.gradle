@@ -22,5 +22,6 @@ android {
 
 dependencies {
     compile 'com.android.support:support-v4:19.+'
+    compile 'com.umeng.analytics:analytics:latest.integration'
     compile files('libs/pinyin4j-2.5.0.jar')
 }
